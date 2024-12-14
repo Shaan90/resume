@@ -1,0 +1,10 @@
+# Ignore all files by default
+*
+
+# But keep track of these file types
+!.gitignore
+!*.tex
+!*.pdf
+
+# Still ignore these specific files even if they match above patterns
+.DS_Store 
