@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+
+% Add custom section formatting
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}%
+  {0.5ex}% space before
+  {0.5ex}% space after
+  {\normalsize\bfseries}}% style
+\makeatother
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{center}
+{\Large \textbf{Shaan Fulton}}\\
+Berkeley, CA $\vert$ shaanfulton@berkeley.edu $\vert$ (650) 714 7406 $\vert$ linkedin.com/in/shaanf
+\end{center}
+
+
+\section*{EDUCATION}
+\vspace{2mm}
+\hrule
+\vspace{4mm}
+\noindent\textbf{University of California, Berkeley} \hfill May 2026\\
+\textit{Bachelor of Arts in Computer Science and Economics} \hfill GPA: 4.0
+\vspace{2mm}
+
+
+\section*{TECHNICAL SKILLS}
+\vspace{2mm}
+\hrule
+\vspace{4mm}
+\noindent\textbf{Languages:} Typescript, CSS, SQL, Python, Java, R, Swift\\
+\textbf{DevOps:} AWS CDK, ECS, EC2, Kubernetes, Docker compose, GitHub Actions, Git\\
+\textbf{Databases:} PostgreSQL, MongoDB\\
+\textbf{Tools:} Figma, Adobe Illustrator, Google Ads, Google Analytics
+\vspace{2mm}
+
+
+\section*{WORK EXPERIENCE}
+\vspace{2mm}
+\hrule
+\vspace{4mm}
+\noindent\textbf{TELO Trucks} \hfill San Carlos, CA\\
+\textit{Web Development Lead} \hfill May 2024 - Present
+\begin{itemize}[itemsep=0pt]
+\item Architected, designed, and deployed a scalable pre-order website increasing vehicle pre-orders from \$5M to \$25M per month and handling up to 170,000 daily users using Next.js, Express, and PostgreSQL.
+\item Implemented infrastructure as code using AWS CDK and Docker to orchestrate CI/CD pipeline on website database and server ECS clusters saving company 50+ dev hours per month.
+\item Automated database migration by developing Python ETL scripts, successfully migrating 10K records from archived CSV to PostgreSQL with zero downtime.
+\item Implemented Sentry logging and AWS cloudwatch alerts to capture and resolve 100+ code issues, reducing monthly site-related customer complaints by 99\%.
+\item Implemented custom Express CMS with MongoDB, to create automated press releases and blog posts, saving 20+ marketing team hours per month.
+\end{itemize}
+
+\noindent\textbf{Jerry's Club} \hfill Berkeley, CA\\
+\textit{Co-Founder and Software Lead} \hfill January 2024 - Present
+\begin{itemize}[itemsep=0pt]
+\item Leading software team in developing marketplace app built on React Native and Django REST framework.
+\item Developed intelligent RAG system using local Llama 3 for dynamic query generation and semantic search across PostgreSQL pricing data, feeding contextualized results to OpenAI API to achieve industry-leading 99\% accuracy on product price valuations, generated up to 10x faster than recommerce competitors.
+\item Mentored by Tesla co-founder Marc Tarpenning on product and technical strategy.
+\end{itemize}
+
+\noindent\textbf{Jump Robotics} \hfill Palo Alto, CA\\
+\textit{Co-Founder and Software Lead} \hfill August 2019 - May 2023
+\begin{itemize}[itemsep=0pt]
+\item Architected team structure and task management for 20-member robotics engineering organization, implementing Git workflows and agile methodologies across 3 sub-teams.
+\item Optimized Google Ads campaigns with Google Analytics and modular Next.js landing pages to A/B test donation routes, achieving \$150K in annual monetary contributions as well as \$100K in-kind.
+\item Developed robot control systems in Java, implementing custom PID design to control swerve-drive drivetrain, increasing reliability from 50\% to 100\% and resulting in winning the FRC Design Award (among 3,500+ competing global teams).
+\end{itemize}
+
+\noindent\textbf{OpsCruise} \hfill Sunnyvale, CA\\
+\textit{Software Developer} \hfill June 2019 - December 2021
+\begin{itemize}[itemsep=0pt]
+\item Designed and developed high-conversion website for Kubernetes observability startup using React and TypeScript, contributing to successful acquisition by Virtana at \$30M valuation.
+\item Collaborated with marketing team to A/B test landing pages, resulting in enterprise demo requests by Tesla, Comcast, and other Fortune 500 companies generated directly through the website.
+\end{itemize}
+
+\end{document}
