@@ -7,10 +7,16 @@
 % Add custom section formatting
 \makeatletter
 \renewcommand\section{\@startsection{section}{1}{0pt}%
-  {0.5ex}% space before
-  {0.5ex}% space after
+  {2mm}% space before
+  {2mm}% space after
   {\normalsize\bfseries}}% style
 \makeatother
+
+% Define custom hrule with spacing
+\newcommand{\sectionline}{%
+  \hrule
+  \vspace{4mm}%
+}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -18,26 +24,22 @@
 \begin{center}
 {\Large \textbf{Shaan Fulton}}\\
 \vspace{2mm}
-Berkeley, CA $\vert$ \href{mailto:shaanfulton@berkeley.edu}{shaanfulton@berkeley.edu} $\vert$ (650) 714 7406 $\vert$ \href{https://linkedin.com/in/shaanf}{linkedin.com/in/shaanf}
+Berkeley, CA $\vert$ \href{mailto:shaanfulton@berkeley.edu}{shaanfulton@berkeley.edu} $\vert$ (650) 714 7406 $\vert$ \href{https://linkedin.com/in/shaanf}{linkedin.com/in/shaanf} $\vert$ \href{https://github.com/shaanfulton}{github.com/shaanfulton}
 \end{center}
 
 
 \section*{EDUCATION}
-\vspace{2mm}
-\hrule
-\vspace{4mm}
+\sectionline
 \noindent\textbf{University of California, Berkeley} \hfill May 2026\\
 \textit{Bachelor of Arts in Computer Science and Economics} \hfill GPA: 4.0
 \begin{itemize}[itemsep=0pt]
-\item Relevant Courses: Data Structures, Discrete Math, Probability Theory, Econometrics, Statistics
+\item Data Structures and Algorithms, Discrete Math, Probability Theory, Econometrics, Statistics
 \end{itemize}
 \vspace{2mm}
 
 
 \section*{TECHNICAL SKILLS}
-\vspace{2mm}
-\hrule
-\vspace{4mm}
+\sectionline
 \noindent\textbf{Languages:} Typescript, CSS, SQL, Python, Java, R, Swift\\
 \textbf{DevOps:} AWS CDK, ECS, EC2, Kubernetes, Docker compose, GitHub Actions, Git\\
 \textbf{Databases:} PostgreSQL, MongoDB\\
@@ -46,9 +48,7 @@ Berkeley, CA $\vert$ \href{mailto:shaanfulton@berkeley.edu}{shaanfulton@berkeley
 
 
 \section*{WORK EXPERIENCE}
-\vspace{2mm}
-\hrule
-\vspace{4mm}
+\sectionline
 \noindent\textbf{TELO Trucks} \hfill San Carlos, CA\\
 \textit{Web Development Lead} \hfill May 2024 - Present
 \begin{itemize}[itemsep=0pt]
